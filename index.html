@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>כלי AI מהסדנה — דף קישורים</title>
+<style>
+  :root{
+    --bg1:#0f172a; --bg2:#1e1b4b; --card:#ffffff; --ink:#1e293b;
+    --muted:#64748b; --accent:#7c3aed; --accent2:#ec4899; --ring:#e2e8f0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Segoe UI","Assistant",Arial,sans-serif;
+    background:linear-gradient(135deg,var(--bg1),var(--bg2));
+    color:var(--ink); min-height:100vh; padding:32px 16px;
+  }
+  .wrap{max-width:960px;margin:0 auto}
+  header{text-align:center;color:#fff;margin-bottom:8px}
+  header h1{font-size:2.3rem;font-weight:800;letter-spacing:-.5px}
+  header h1 .em{background:linear-gradient(90deg,#a78bfa,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent}
+  header p{color:#cbd5e1;margin-top:10px;font-size:1.05rem}
+  .badge{display:inline-block;margin-top:14px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
+    color:#e9d5ff;padding:6px 16px;border-radius:999px;font-size:.9rem}
+  .section-title{color:#c4b5fd;font-size:1.1rem;font-weight:700;margin:34px 4px 14px;display:flex;align-items:center;gap:8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+  .card{
+    background:var(--card);border-radius:18px;padding:20px;text-decoration:none;color:inherit;
+    display:flex;gap:14px;align-items:flex-start;border:1px solid var(--ring);
+    box-shadow:0 10px 30px rgba(0,0,0,.18);transition:transform .18s ease,box-shadow .18s ease;position:relative;overflow:hidden
+  }
+  .card::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(var(--accent),var(--accent2))}
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(124,58,237,.35)}
+  .ico{font-size:1.9rem;flex:0 0 auto;width:48px;height:48px;display:grid;place-items:center;
+    background:linear-gradient(135deg,#f5f3ff,#fce7f3);border-radius:12px}
+  .card h3{font-size:1.12rem;font-weight:700;margin-bottom:3px}
+  .card .url{color:var(--accent);font-size:.82rem;direction:ltr;text-align:right;word-break:break-all}
+  .card .desc{color:var(--muted);font-size:.9rem;margin-top:6px;line-height:1.45}
+  .rec{
+    background:linear-gradient(135deg,#7c3aed,#ec4899);border-radius:18px;padding:22px;color:#fff;
+    display:flex;align-items:center;gap:16px;box-shadow:0 12px 34px rgba(236,72,153,.4);margin-bottom:6px
+  }
+  .rec .ico2{font-size:2.2rem}
+  .rec h3{font-size:1.15rem}
+  .rec a{color:#fff;font-weight:700;text-decoration:underline;direction:ltr;display:inline-block;margin-top:4px}
+  .rec .pending{opacity:.9;font-size:.92rem;margin-top:4px}
+  footer{text-align:center;color:#94a3b8;margin-top:36px;font-size:.85rem}
+  .note{color:#94a3b8;font-size:.8rem;margin:6px 4px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🎬 כלי ה-<span class="em">AI</span> מהסדנה</h1>
+    <p>כל האתרים והכלים שהוצגו בהקלטה — במקום אחד, מוכנים ללחיצה</p>
+    <span class="badge">👑 שמשון ג'יקוב · חתן חידון התנ"ך הבינלאומי 2025</span>
+  </header>
+
+  <!-- RECORDING -->
+  <div class="section-title">📼 הקלטת הסדנה</div>
+  <a class="rec" id="recCard" href="https://drive.google.com/file/d/1e67L7IXLQYtJJg7Ff4x7F9er1TE51kX4/view?usp=sharing" target="_blank" style="text-decoration:none">
+    <div class="ico2">▶️</div>
+    <div>
+      <h3>הקלטת הסדנה המלאה (~63 דק')</h3>
+      <div class="pending">▶ לחץ לצפייה · מתארח ב-Google Drive הפרטי שלך</div>
+    </div>
+  </a>
+
+  <!-- MAIN TOOLS -->
+  <div class="section-title">🛠️ הכלים המרכזיים שהוצגו</div>
+  <div class="grid">
+
+    <a class="card" href="https://gemini.google.com/app" target="_blank">
+      <div class="ico">✨</div>
+      <div><h3>Google Gemini — יצירת תמונות</h3>
+        <div class="url">gemini.google.com/app</div>
+        <div class="desc">ישר לצ'אט ליצירת תמונות ודמויות לילדים וכתיבת פרומפטים.</div></div>
+    </a>
+
+    <a class="card" href="https://labs.google/fx/tools/flow" target="_blank">
+      <div class="ico">🎥</div>
+      <div><h3>Google Flow (Veo) — יצירת וידאו</h3>
+        <div class="url">labs.google/fx/tools/flow</div>
+        <div class="desc">ישר לסטודיו ה-AI ליצירת סרטוני וידאו מטקסט ומתמונה.</div></div>
+    </a>
+
+    <a class="card" href="https://aistudio.google.com/generate-speech" target="_blank">
+      <div class="ico">🎙️</div>
+      <div><h3>Google AI Studio — קריינות</h3>
+        <div class="url">aistudio.google.com/generate-speech</div>
+        <div class="desc">ישר למסך יצירת הקריינות (Text-to-Speech) עם קולות Gemini.</div></div>
+    </a>
+
+    <a class="card" href="https://kling.ai/app/video/new" target="_blank">
+      <div class="ico">🎞️</div>
+      <div><h3>Kling AI — יצירת וידאו</h3>
+        <div class="url">kling.ai/app/video/new</div>
+        <div class="desc">ישר למסך יצירת סרטון AI + דמות מדברת (AI Lip-Sync).</div></div>
+    </a>
+
+    <a class="card" href="https://app.heygen.com/avatar" target="_blank">
+      <div class="ico">🧑‍💻</div>
+      <div><h3>HeyGen — אווטאר מדבר</h3>
+        <div class="url">app.heygen.com/avatar</div>
+        <div class="desc">ישר למסך יצירת אווטאר מדבר / Avatar IV מטקסט.</div></div>
+    </a>
+
+  </div>
+
+  <footer>נוצר אוטומטית מתוך הקלטת הזום · לחיצה על כל כרטיס פותחת את האתר בלשונית חדשה</footer>
+</div>
+</body>
+</html>
